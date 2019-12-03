@@ -11,100 +11,107 @@
   </head>
   <body>
     <header>
- <!--Pantalla de bienvenida-->
-  <div id="first-view" class="screen-one"> 
-  <img src="img/Pokemon_Go.png" alt="pokemon" class="image1">
-  <p class="welcome">¡Bienvenido a Pokémon GO! 
-      Tu catálogo virtual que te brinda una gran variedad de información sobre cada Pokémon para que puedas conocerlos a todos y ser un maestro pokémon. </p>
-  <button id="btn-start" class="button-start">Empezar</button>
-</div>
-<!--Segunda pantalla-->
- <div id="second-view" class="hide">
-   <img src="img/Pokemon_Go.png" alt="pokemon" class="image2" >
-    <input class="menu-btn" type="checkbox" id="menu-btn" />
-    <label class="menu-icon" for="menu-btn">
-    <span class="navicon"></span></label>
-       <ul class="header menu">
-        <li class="item-menu" id="btn-pokedex"><img src="img/pokedex1.png" alt="icon-pokedex-menu" class="iconpokedex"> POKEDEX</li>
-        <li class="item-menu" id="btn-topten"><img src="img/top10.png" alt="icon-filter-menu" class="iconpokedex">TOP 10</li>
-        <li class="item-menu" id="btn-types"><img src="img/filter.png" alt="icon-filter-menu" class="iconpokedex">FILTRAR</li> 
-        <li class="item-menu" id="btn-evolution"><img src="img/evolucion.png" alt="icon-filter-menu" class="iconpokedex">EVOLUCION</li> 
+      <!--Pantalla de bienvenida-->
+      <div id="first-view" class="screen-one"> 
+        <img src="img/Pokemon_Go.png" alt="pokemon" class="image1">
+        <p class="welcome">¡Bienvenido a Pokémon GO! 
+          Tu catálogo virtual que te brinda una gran variedad de información sobre cada Pokémon para que puedas conocerlos a todos y ser un maestro pokémon.
+        </p>
+        <button id="btn-start" class="button-start">Empezar</button>
+      </div>
+      <!--Segunda pantalla-->
+      <div id="second-view" class="hide">
+        <img src="img/Pokemon_Go.png" alt="pokemon" class="image2" >
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn">
+          <span class="navicon"></span>
+        </label>
+        <ul class="header menu">
+          <li class="item-menu" id="btn-pokedex">
+            <img src="img/pokedex1.png" alt="icon-pokedex-menu" class="iconpokedex">
+            <span>POKEDEXPOKEDEX</span>
+          </li>
+          <li class="item-menu" id="btn-topten"><img src="img/top10.png" alt="icon-filter-menu" class="iconpokedex">TOP 10</li>
+          <li class="item-menu" id="btn-types"><img src="img/filter.png" alt="icon-filter-menu" class="iconpokedex">FILTRAR</li> 
+          <li class="item-menu" id="btn-evolution"><img src="img/evolucion.png" alt="icon-filter-menu" class="iconpokedex">EVOLUCION</li> 
         </ul>
- </div>  
+      </div>  
     </header>
-<main>
-<section id="pokemonSection" class="hide">
-  <div class="pokedexSection">
-    <div id="search" class="hide">
-      <div class="searchstyle">
-        <input id="input-search" class="search" type="text" placeholder="Busca a tu pokemon"/>
-        <img src="img/descarga.png" alt="lupa" class="lupa" id="btn-search">
-      </div> 
-    </div> 
-    <div id="orderList" class="hide">
-      <select name="type" id="orderselector">
-         <option value="" disabled selected>Ordenar por...</option>
-         <option value="asc">Número: 1-151</option>
-         <option value="desc">Número: 151-1</option>
-         <option value="a-z">Nombre: A-Z</option>
-         <option value="z-a">Nombre: Z-A</option>
-      </select>
-    </div> 
-  </div>
-  <div class="filterSection">
-    <div id="filterList" class="hide">
-      <select name="type" id="typeselector">
-        <option value="" disabled selected>Filtrar por tipo</option>
-        <option value="Water">Agua</option>
-        <option value="Bug">Bicho</option>
-        <option value="Dragon">Dragón</option>
-        <option value="Electric">Eléctrico</option>
-        <option value="Ghost">Fantasma</option>
-        <option value="Fire">Fuego</option>
-        <option value="Ice">Hielo</option>
-        <option value="Fighting">Lucha</option>
-        <option value="Normal">Normal</option>
-        <option value="Grass">Hierba</option>
-        <option value="Psychic">Psíquico</option>
-        <option value="Rock">Roca</option>
-        <option value="Ground">Tierra</option>
-        <option value="Poison">Veneno</option>
-        <option value="Flying">Volador</option>
-      </select>
-    </div>
-    <div id="weaknessesList" class="hide">
-      <select name="type" id="weaknesses-selector">
-        <option value="" disabled selected>Filtrar por debilidad</option>
-        <option value="Water">Agua</option>
-        <option value="Bug">Bicho</option>
-        <option value="Dragon">Dragón</option>
-        <option value="Electric">Eléctrico</option>
-        <option value="Ghost">Fantasma</option>
-        <option value="Fire">Fuego</option>
-        <option value="Ice">Hielo</option>
-        <option value="Fighting">Lucha</option>
-        <option value="Grass">Hierba</option>
-        <option value="Psychic">Psíquico</option>
-        <option value="Rock">Roca</option>
-        <option value="Ground">Tierra</option>
-        <option value="Poison">Veneno</option>
-        <option value="Flying">Volador</option>
-      </select>
-    </div>
-  </div>
-  <div id="evolutionSection" class="hide">
-    <div class="evolutionSection">
-       <div class="one"> <h4 class="message">¿Quieres saber cuántos caramelos te faltan para que tu pokemon evolucione? Averigualo!</h4> </div> 
-       <div class="one"><input type="text" id="namepokemon" placeholder="Nombre de tu pokemon" class="search"> </div> 
-       <div class="one"><input type="text" id="numberOfCandies" placeholder="# de tus caramelos" class="search"> </div> 
-       <div class="one"><button id="btn-calculate" class="btn-calculate">calcular</button> </div> 
-  </div> 
-</div>
-  <div id="pokemonList" class="pokemonList">
-</div>
-  </section>
-  </main>
-  <footer></footer>
-  <script type="module" src="main.js"></script>
+    <main>
+      <section id="pokemonSection" class="hide">
+        <div class="pokedexSection">
+          <div id="search" class="hide">
+            <div class="searchstyle">
+              <input id="input-search" class="search" type="text" placeholder="Busca a tu pokemon"/>
+              <img src="img/descarga.png" alt="lupa" class="lupa" id="btn-search">
+            </div> 
+          </div> 
+          <div id="orderList" class="hide">
+            <select name="type" id="orderselector">
+              <option value="" disabled selected>Ordenar por...</option>
+              <option value="asc">Número: 1-151</option>
+              <option value="desc">Número: 151-1</option>
+              <option value="a-z">Nombre: A-Z</option>
+              <option value="z-a">Nombre: Z-A</option>
+            </select>
+          </div>
+        </div>
+        <div class="filterSection">
+          <div id="filterList" class="hide">
+            <select name="type" id="typeselector">
+              <option value="" disabled selected>Filtrar por tipo</option>
+              <option value="Water">Agua</option>
+              <option value="Bug">Bicho</option>
+              <option value="Dragon">Dragón</option>
+              <option value="Electric">Eléctrico</option>
+              <option value="Ghost">Fantasma</option>
+              <option value="Fire">Fuego</option>
+              <option value="Ice">Hielo</option>
+              <option value="Fighting">Lucha</option>
+              <option value="Normal">Normal</option>
+              <option value="Grass">Hierba</option>
+              <option value="Psychic">Psíquico</option>
+              <option value="Rock">Roca</option>
+              <option value="Ground">Tierra</option>
+              <option value="Poison">Veneno</option>
+              <option value="Flying">Volador</option>
+            </select>
+          </div>
+          <div id="weaknessesList" class="hide">
+            <select name="type" id="weaknesses-selector">
+              <option value="" disabled selected>Filtrar por debilidad</option>
+              <option value="Water">Agua</option>
+              <option value="Bug">Bicho</option>
+              <option value="Dragon">Dragón</option>
+              <option value="Electric">Eléctrico</option>
+              <option value="Ghost">Fantasma</option>
+              <option value="Fire">Fuego</option>
+              <option value="Ice">Hielo</option>
+              <option value="Fighting">Lucha</option>
+              <option value="Grass">Hierba</option>
+              <option value="Psychic">Psíquico</option>
+              <option value="Rock">Roca</option>
+              <option value="Ground">Tierra</option>
+              <option value="Poison">Veneno</option>
+              <option value="Flying">Volador</option>
+            </select>
+          </div>
+        </div>
+        <div id="evolutionSection" class="hide">
+          <div class="evolutionSection">
+            <div class="one"> 
+              <h4 class="message">¿Quieres saber cuántos caramelos te faltan para que tu pokemon evolucione? Averigualo!</h4>
+            </div> 
+            <div class="one"><input type="text" id="namepokemon" placeholder="Nombre de tu pokemon" class="search"> </div> 
+            <div class="one"><input type="text" id="numberOfCandies" placeholder="# de tus caramelos" class="search"> </div> 
+            <div class="one"><button id="btn-calculate" class="btn-calculate">calcular</button> </div> 
+          </div> 
+        </div>
+        <div id="pokemonList" class="pokemonList">
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <script type="module" src="main.js"></script>
   </body>
 </html>

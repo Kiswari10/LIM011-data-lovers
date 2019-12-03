@@ -2,11 +2,7 @@
 
 Pokemon Go es una aplicación web que tiene como objetivo principal ser un catálogo virtual para brindar una gran variedad de información a cerca de cada pokemon para que puedas conocerlos mejor y ser un gran maestro pokemon, en esta aplicación nuestros usuarios van a poder conocer los tipos de pokemon que existen, sus debilidades, cuales son los pokemones con mayor frecuencia de aparición, cuantos caramelos te faltan para que tu pokemon evolucione, entre muchas cosas más es una web muy fácil de manejar sin necesidad de seguir instrucciones el usuario puede acceder a toda la información que contiene.
 
-## 2. Mapa de Sitio Web:
- 
-  ![](https://github.com/ariadnaflores/LIM011-data-lovers/blob/prueba-ariadna/src/img/mapadesitio.png)
-
-## 3. Historias de usuario:
+## 2. Historias de usuario:
 
 ### Escenario 1
 
@@ -114,7 +110,7 @@ _"Yo, como usuario, quiero saber el numero de caramelos que me falta para que mi
 - Que al darle click en el botón calcular, se le muestre el nombre y la imagen del pokemon a buscar, el número de caramelos que falta para la siguiente evolución, el cual también debe mostrar nombre e imagen.
 
 
-## 4. Diseño interfaz de usuario :
+## 3. Diseño interfaz de usuario :
    ### Protipo de baja fidelidad 
 
  ![](https://github.com/ariadnaflores/LIM011-data-lovers/blob/prueba-ariadna/src/img/prototipobajafidelidad1.1.jpeg)
@@ -129,7 +125,7 @@ _"Yo, como usuario, quiero saber el numero de caramelos que me falta para que mi
 
  ![](https://github.com/ariadnaflores/LIM011-data-lovers/blob/prueba-ariadna/src/img/prototipobajafidelidad6.jpeg)
 
-## 5. Sitio web :
+## 4. Sitio web :
  ![](https://github.com/ariadnaflores/LIM011-data-lovers/blob/prueba-ariadna/src/img/primera_pantalla.png)
 
  ![](https://github.com/ariadnaflores/LIM011-data-lovers/blob/prueba-ariadna/src/img/pokedex.png)
@@ -146,7 +142,7 @@ _"Yo, como usuario, quiero saber el numero de caramelos que me falta para que mi
 
  ![](https://github.com/ariadnaflores/LIM011-data-lovers/blob/prueba-ariadna/src/img/mobiledos.png)
 
-## 6. Feedback recibido :
+## 5. Feedback recibido :
 ### Usuario 1: 
 - Quitar el boton de volver, ya que existe una barra de menú
 ### Usuario 2: 
@@ -158,13 +154,13 @@ _"Yo, como usuario, quiero saber el numero de caramelos que me falta para que mi
 ### Usuario 4:
 - Agregar evoluciones de los pokemones
 
-## 7. Otros:
+## 6. Otros:
 ### Figma en Web
 https://www.figma.com/proto/3EI6dmp6Z0DMaHx02P8LQ0/Data-Lover-Pokemon-Web?node-id=1%3A3&scaling=contain
 ### Figma para versión mobile
 https://www.figma.com/proto/GKRnRnG5hmgwAMDs7kxiPA/Data-Lover-Pokemon-movil?scaling=scale-down&node-id=1%3A2
 
-## 8. Objetivos de aprendizaje
+## 7. Objetivos de aprendizaje
 
 El objetivo principal de este proyecto es que, entendiendo las necesidades de
 tus usuarios, aprendas a diseñar y construir una interfaz web donde se pueda
