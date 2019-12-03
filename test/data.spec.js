@@ -1,6 +1,6 @@
 /* eslint-disable object-curly-newline */
 // importamos la función `example`
-import { filter, order, searchPokemons, filterTopshow, calculateCandies } from '../src/data';
+import { filter, order, searchPokemons, top10, calculateCandies } from '../src/data';
 
 const firstInput = [
   { id: 1, name: 'Bulbasaur', type: ['Grass', 'Poison'], weaknesses: ['Fire', 'Ice', 'Flying', 'Psychic'] },
@@ -102,18 +102,19 @@ describe('searchPokemons', () => {
   });
 });
 const spawnchanceInput = [
-  { id: 4, name: 'Charmander', type: ['Fire'], spawn_chance: 0.253, weaknesses: ['Water', 'Ground', 'Rock'] },
-  { id: 5, name: 'Charmeleon', type: ['Fire'], spawn_chance: 0.012, weaknesses: ['Water', 'Ground', 'Rock'] },
-  { id: 41, num: '041', name: 'Zubat', type: ['Poison', 'Flying'], spawn_chance: 6.52, weaknesses: ['Electric', 'Ice', 'Psychic', 'Rock'] },
+  { id: 4, name: 'Charmander', type: ['Fire'], avg_spawns: 25.3, weaknesses: ['Water', 'Ground', 'Rock'] },
+  { id: 5, name: 'Charmeleon', type: ['Fire'], avg_spawns: 1.2, weaknesses: ['Water', 'Ground', 'Rock'] },
+  { id: 41, num: '041', name: 'Zubat', type: ['Poison', 'Flying'], avg_spawns: 652, weaknesses: ['Electric', 'Ice', 'Psychic', 'Rock'] },
 ];
 const spawnchanceOutput = [
-  { id: 41, num: '041', name: 'Zubat', type: ['Poison', 'Flying'], spawn_chance: 6.52, weaknesses: ['Electric', 'Ice', 'Psychic', 'Rock'] },
+  { id: 41, num: '041', name: 'Zubat', type: ['Poison', 'Flying'], avg_spawns: 652, weaknesses: ['Electric', 'Ice', 'Psychic', 'Rock'] },
 ];
-describe('filterTopshow', () => {
-  it('debería retornar un array con los pokemones ordenados por propiedad spawn_chance', () => {
-    expect(filterTopshow(spawnchanceInput)).toEqual(spawnchanceOutput);
+describe('top10', () => {
+  it('debería retornar un array con el pokemon mas frecuente segun propiedad avg_spawn', () => {
+    expect(top10(spawnchanceInput, 1)).toEqual(spawnchanceOutput);
   });
 });
+
 const pokemonCandyTest = [
   { id: 4, name: 'Charmander', type: ['Fire'], candy_count: 25, weaknesses: ['Water', 'Ground', 'Rock'] },
 ];
