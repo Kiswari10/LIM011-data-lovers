@@ -30,10 +30,11 @@ export const searchPokemons = (pokemonList, inputValue) => pokemonList.filter(
   (pokemon) => pokemon.name.toLowerCase().startsWith(inputValue),
 );
 
-// Función de aparición top 10 más frecuentes
-export const filterTopshow = (pokemonList) => pokemonList.filter(
-  (pokemon) => pokemon.spawn_chance > 2.5,
-);
+// Función de aparición top 10 más frecuentes (cambiar)
+export const top10 = (array, num) => {
+  const orderSpawns = array.sort((a, b) => b.avg_spawns - a.avg_spawns);
+  return orderSpawns.slice(0, num);
+};
 
 // Función de calcular los caramelos para la siguiente evolución
 export const calculateCandies = (array, nombre, candy) => {
