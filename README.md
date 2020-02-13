@@ -109,38 +109,25 @@ _"Yo, como usuario, quiero saber el numero de caramelos que me falta para que mi
 
 - Que al darle click en el botón calcular, se le muestre el nombre y la imagen del pokemon a buscar, el número de caramelos que falta para la siguiente evolución, el cual también debe mostrar nombre e imagen.
 
+## 3. Sitio web :
+ ![](https://github.com/Kiswari10/LIM011-data-lovers/blob/master/src/img/view_welcome.png)
 
-## 3. Diseño interfaz de usuario :
-   ### Protipo de baja fidelidad 
+ ![](https://github.com/Kiswari10/LIM011-data-lovers/blob/master/src/img/view_principal.png)
 
- ![](https://github.com/ariadnaflores/LIM011-data-lovers/blob/prueba-ariadna/src/img/prototipobajafidelidad1.1.jpeg)
+ ![](https://github.com/Kiswari10/LIM011-data-lovers/blob/master/src/img/view_modal.png)
 
- ![](https://github.com/ariadnaflores/LIM011-data-lovers/blob/prueba-ariadna/src/img/prototipobajafidelidad2.jpeg)
-
- ![](https://github.com/ariadnaflores/LIM011-data-lovers/blob/prueba-ariadna/src/img/prototipobajafidelidad3.jpeg)
-
- ![](https://github.com/ariadnaflores/LIM011-data-lovers/blob/prueba-ariadna/src/img/prototipobajafidelidad4.jpeg)
-
- ![](https://github.com/ariadnaflores/LIM011-data-lovers/blob/prueba-ariadna/src/img/prototipobajafidelidad5.jpeg)
-
- ![](https://github.com/ariadnaflores/LIM011-data-lovers/blob/prueba-ariadna/src/img/prototipobajafidelidad6.jpeg)
-
-## 4. Sitio web :
- ![](https://github.com/ariadnaflores/LIM011-data-lovers/blob/prueba-ariadna/src/img/primera_pantalla.png)
-
- ![](https://github.com/ariadnaflores/LIM011-data-lovers/blob/prueba-ariadna/src/img/pokedex.png)
-
- ![](https://github.com/ariadnaflores/LIM011-data-lovers/blob/prueba-ariadna/src/img/top10%20menu.png)
-
- ![](https://github.com/ariadnaflores/LIM011-data-lovers/blob/prueba-ariadna/src/img/filtrar.png)
-
- ![](https://github.com/ariadnaflores/LIM011-data-lovers/blob/prueba-ariadna/src/img/vistaevolucionmenu.png)
+ ![](https://github.com/Kiswari10/LIM011-data-lovers/blob/master/src/img/view_evolution.png)
 
  ### Vista mobile
 
- ![](https://github.com/ariadnaflores/LIM011-data-lovers/blob/prueba-ariadna/src/img/mobileuno.png)
+ ![](https://github.com/Kiswari10/LIM011-data-lovers/blob/master/src/img/view_welcome.png)
 
- ![](https://github.com/ariadnaflores/LIM011-data-lovers/blob/prueba-ariadna/src/img/mobiledos.png)
+
+## 4. Prototipo de alta fidelidad :
+### Figma para versión web
+https://www.figma.com/proto/3EI6dmp6Z0DMaHx02P8LQ0/Data-Lover-Pokemon-Web?node-id=1%3A3&scaling=contain
+### Figma para versión mobile
+https://www.figma.com/proto/GKRnRnG5hmgwAMDs7kxiPA/Data-Lover-Pokemon-movil?scaling=scale-down&node-id=1%3A2
 
 ## 5. Feedback recibido :
 ### Usuario 1: 
@@ -154,13 +141,7 @@ _"Yo, como usuario, quiero saber el numero de caramelos que me falta para que mi
 ### Usuario 4:
 - Agregar evoluciones de los pokemones
 
-## 6. Otros:
-### Figma en Web
-https://www.figma.com/proto/3EI6dmp6Z0DMaHx02P8LQ0/Data-Lover-Pokemon-Web?node-id=1%3A3&scaling=contain
-### Figma para versión mobile
-https://www.figma.com/proto/GKRnRnG5hmgwAMDs7kxiPA/Data-Lover-Pokemon-movil?scaling=scale-down&node-id=1%3A2
-
-## 7. Objetivos de aprendizaje
+## 6. Objetivos de aprendizaje
 
 El objetivo principal de este proyecto es que, entendiendo las necesidades de
 tus usuarios, aprendas a diseñar y construir una interfaz web donde se pueda
