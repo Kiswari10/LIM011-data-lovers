@@ -1,9 +1,10 @@
-/* eslint-disable arrow-body-style */
 /* eslint-disable no-shadow */
 /* eslint-disable import/extensions */
-/* eslint-disable object-curly-newline */
+
 import POKEMON from './data/pokemon/pokemon.js';
-import { filter, order, searchPokemons, calculateCandies, top10 } from './data.js';
+import {
+  filter, order, searchPokemons, calculateCandies, top10,
+} from './data.js';
 
 // Declaración de variables
 const nextView = document.querySelector('#next');
@@ -12,6 +13,7 @@ const header = document.querySelector('#header');
 const main = document.querySelector('#main');
 const sidebar = document.querySelector('#sidebar');
 const pokemonSection = document.querySelector('#pokemon-section');
+// const footer = document.querySelector('footer');
 
 // Mostrar todos los pokemones
 const allPokemones = document.querySelector('#all-pokemones');
@@ -37,25 +39,31 @@ const showPokemons = (POKEMON) => {
       cardModal.setAttribute('id', 'card-modal');
       cardModal.setAttribute('class', 'card-modal');
       infoModalPokemon = `<div class='information'>
-                                    <span class="close" id="close">&times;</span>
-                                    <div>
-                                      <img src='${obj.img}'/> 
-                                    </div>
-                                    <p class='letter1'><b>${obj.name}</b></p>
-                                    <p class='letter2'>N° ${obj.num}</p>
-                                    <div class='information2'>
-                                      <p class="letter1">${obj.height}</p> 
-                                      <span class='letter2'>Altura</span>
-                                      <p class="letter1">${obj.weight}</p> 
-                                      <span class='letter2'>Peso</span>
-                                      <div class='extrainfo2'> <p class="letter1">${obj.candy_count}
-                                        <img src="img/caramelo.png"></p><span class='letter2'> Caramelos</span> 
-                                      </div>
-                                    </div>
-                                    <p><span>Tipo:</span> <br> ${obj.type.join(' & ')}</p>
-                                    <p class="letter2"> <span>Hora de aparicion:</span> ${obj.spawn_time}</p>
-                                    <p><span>Debilidades:</span> <br> ${obj.weaknesses.join(', ')}</p>
-                                  </div>
+                            <span class="close" id="close">&times;</span>
+                            <p class='letter1'><b>${obj.name}</b></p>
+                            <p class='letter2'>N° ${obj.num}</p>
+                            <div>
+                              <img src='${obj.img}'/> 
+                            </div>
+                            <div class='information2'>
+                              <div class='extrainfo2'>
+                                <p class="letter1">${obj.height}</p> 
+                                <span class='letter2'>Altura</span>
+                              </div>
+                              <div class='extrainfo2'>
+                                <p class="letter1">${obj.weight}</p> 
+                                <span class='letter2'>Peso</span>
+                              </div>
+                              <div class='extrainfo2'> 
+                                <p class="letter1">${obj.candy_count}
+                                <img src="img/caramelo.png"></p>
+                                <span class='letter2'> Caramelos</span> 
+                              </div>
+                            </div>
+                            <p><span>Tipo:</span> ${obj.type.join(' & ')}</p>
+                            <p class=""> <span>Hora de aparicion:</span> ${obj.spawn_time}</p>
+                            <p><span>Debilidades: </span>${obj.weaknesses.join(', ')}</p>
+                          </div>
               `;
       document.querySelector('#modal-pokemon').appendChild(cardModal);
       cardModal.innerHTML = infoModalPokemon;
@@ -79,6 +87,7 @@ nextView.addEventListener('click', () => {
   main.classList.remove('hide');
   sidebar.classList.remove('hide');
   pokemonSection.classList.remove('hide');
+  // footer.classList.remove('hide');
   showPokemons(POKEMON);
 });
 
@@ -130,6 +139,7 @@ pokedex.addEventListener('click', () => {
   evolutionSection.classList.add('hide');
   sidebar.classList.remove('hide');
   pokemonSection.classList.remove('hide');
+  // footer.classList.remove('hide');
 });
 
 // Barra lateral
@@ -152,13 +162,12 @@ const btnCalculate = document.getElementById('btn-calculate');
 const namePokemon = document.getElementById('name-pokemon');
 const numberOfCandies = document.getElementById('number-of-candies');
 
-btnCalculate.addEventListener('click', () => {
+btnCalculate.addEventListener('click', (event) => {
+  event.preventDefault();
   const candy = calculateCandies(POKEMON, namePokemon.value, numberOfCandies.value);
   const wantedPokemon = POKEMON.filter((obj) => obj.name.toLowerCase() === namePokemon.value);
   const nextEvolution = POKEMON.filter(
-    (obj) => {
-      return obj.name.toLowerCase() === wantedPokemon[0].next_evolution[0].name.toLowerCase();
-    },
+    (obj) => obj.name.toLowerCase() === wantedPokemon[0].next_evolution[0].name.toLowerCase(),
   );
   let showEvolution;
   wantedPokemon.forEach((obj) => {
