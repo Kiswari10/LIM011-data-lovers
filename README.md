@@ -1,6 +1,7 @@
 ## 1. Descripción de Producto
 
-Pokemon Go es una aplicación web que tiene como objetivo principal ser un catálogo virtual para brindar una gran variedad de información a cerca de cada pokemon para que puedas conocerlos mejor y ser un gran maestro pokemon, en esta aplicación nuestros usuarios van a poder conocer los tipos de pokemon que existen, sus debilidades, cuales son los pokemones con mayor frecuencia de aparición, cuantos caramelos te faltan para que tu pokemon evolucione, entre muchas cosas más es una web muy fácil de manejar sin necesidad de seguir instrucciones el usuario puede acceder a toda la información que contiene.
+Pokemon Go es una aplicación web que tiene como objetivo principal ser un catálogo virtual para brindar una gran variedad de información acerca de cada pokémon de la Región Kanto.
+En esta aplicación nuestros usuarios van a poder conocer los tipos de pokémon que existen, sus debilidades, cuáles son los pokemones con mayor frecuencia de aparición y saber cuántos caramelos le faltan a un pokémon para que evolucione. Al contener informacion básica de los pokemones de la región de la primera generación, esta orientada principalmente a usuarios que recién se inicien en el mundo Pokémon y los videojuegos relacionados a este, además es una web fácil de manejar.
 
 ## 2. Historias de usuario:
 
@@ -24,7 +25,7 @@ _"Yo, como usuario quiero ver en la pagina una lista completa de todos los pokem
 
 - La pagina deberá mostrar en pantalla una lista completa de todos los pokemones.
 
-- El usuario, podrá ver en la lista, el nombre, número e imagen de cada pokemon
+- El usuario, podrá ver en la lista, el nombre, número, imagen y tipo de cada pokemon
 
 - La vista será responsive: para que se pueda visualizar en cualquier dispositivo móvil.
 
@@ -36,9 +37,9 @@ _"Yo, como usuario quiero, al ver la lista de todos los pokemones, seleccionar u
 
 - Que el usuario, al ver la lista completa de los pokemones, tenga la opción de seleccionar uno de ellos
 
-- Que el usuario, al darle click a la imagen del pokemon, gire la cartilla del pokemon elegido.
+- Que el usuario, al darle click a la imagen del pokemon, se abra una pantalla modal del pokemon elegido.
 
-- Que la nueva cartilla muestre la información (peso, altura. tipo, debilidades y evoluciones) del pokemon seleccionado.
+- Que el modal muestre la información (peso, altura. tipo, debilidades) del pokemon seleccionado.
 
 - La vista será responsive: para que se pueda visualizar en cualquier dispositivo móvil.
 
@@ -48,13 +49,15 @@ _"Yo, como usuario quiero filtrar los pokemones según su tipo (fuego, agua,etc)
 
 **Criterios de aceptación:**
 
-- En la barra superior de la pagina aparece la opción de "filtrar".
+- En la parte superior izquierda aparezca un icono, que al darle click, aparezca una menu lateral.
 
-- Al seleccionar "filtrar", se muestra otra pantalla con 2 listas desplegables, una de filtrado por tipos y la otra por filtrado por debilidades.
+- En el menu lateral se muestre una pequeña sección de "filtrar Pokémon".
+
+- Que esta pequeña seccion muestre 2 listas desplegables, una de filtrado por tipos y la otra por filtrado por debilidades.
 
 - El usuario, al seleccionar una de las listas, puede elegir entre las opciones mostradas (agua, fuego, eléctrico, etc).
 
-- Al darle click a una opcion, se muestra la lista de los pokemones según la opción elegida (agua, fuego, etc).
+- Al darle click a una opción, se muestra la lista de los pokemones según la opción elegida (agua, fuego, etc).
 
 - La vista será responsive: para que se pueda visualizar en cualquier dispositivo móvil.
 
@@ -64,9 +67,9 @@ _"Yo, como usuario quiero saber los pokemones con mayor frecuencia de aparición
 
 **Criterios de aceptación:**
 
-- Que la página muestre la opción de "top 10 de aparición" en la barra superior.
+- Que en el menu lateral de la página se muestre la opción de "top 10 pokemones mas frecuentes".
 
-- Al darle click a "top 10", se mostrará una pantalla con la lista ordenada de los pokemones con mayor frecuencia de aparición.
+- Al darle click, se mostrará una pantalla con la lista ordenada de los pokemones con mayor frecuencia de aparición.
 
 - La vista será responsive: para que se pueda visualizar en cualquier dispositivo móvil.
 
@@ -76,11 +79,11 @@ _"Yo, como usuario quiero poder buscar un pokemon según su nombre para saber su
 
 **Criterios de aceptación:**
 
-- En la barra superior de la pagina aparece la barra de búsqueda.
+- En la parte superior de la página aparece la barra de búsqueda.
 
 - El usuario podrá ingresar el nombre del pokemon.
 
-- Al ingresar el nombre del pokemon, la barra de búsqueda ira retornando los resultados con los primeros caracteres de la palabra sin necesidad de darle click a un boton
+- Al ingresar el nombre del pokemon, la barra de búsqueda ira retornando los resultados con los primeros caracteres de la palabra sin necesidad de darle click a un botón.
 
 - La vista será responsive: para que se pueda visualizar en cualquier dispositivo móvil.
 
@@ -90,9 +93,9 @@ _"Yo, como usuario quiero ver los pokemones en orden ascendente y descendente se
 
 **Criterios de aceptación:**
 
-- Que el usuario al ingresar a la vista pokedex, vea un select con la opción de ordenar.
+- Que en el menú lateral de la página se muestre la sección de "Ordenar Pokemón".
 
-- Al darle click al select, se le muestre las opciones de ordenar de formas ascendente y descendente por nombre (A-Z, Z-A).
+- Que esta sección muestre una lista desplegable de ordenar de forma ascendente y descendente tanto por nombre (A-Z, Z-A) como por numero.
 
 - El usuario al elegir una de las opciones, se le muestre la lista ordenada de los pokemon.
 
@@ -103,7 +106,7 @@ _"Yo, como usuario, quiero saber el numero de caramelos que me falta para que mi
 
 **Criterios de aceptación:**
 
-- Que el usuario al ingresar a la vista evolución, vea un pequeño mensaje con dos cuadros de inputs. 
+- Que el usuario al ingresar a la caramelos y evolución, vea un pequeño mensaje con dos cuadros de inputs. 
 
 - Que el usuario pueda ingresar el nombre del pokemon y el número de caramelos que posee en los 2 cuadros.
 
@@ -120,8 +123,9 @@ _"Yo, como usuario, quiero saber el numero de caramelos que me falta para que mi
 
  ### Vista mobile
 
- ![](https://github.com/Kiswari10/LIM011-data-lovers/blob/master/src/img/view_welcome.png)
+ ![](https://github.com/Kiswari10/LIM011-data-lovers/blob/master/src/img/viewMobile_principal.png)
 
+ ![](https://github.com/Kiswari10/LIM011-data-lovers/blob/master/src/img/viewMobile_evolution.png)
 
 ## 4. Prototipo de alta fidelidad :
 ### Figma para versión web
@@ -129,17 +133,13 @@ https://www.figma.com/proto/3EI6dmp6Z0DMaHx02P8LQ0/Data-Lover-Pokemon-Web?node-i
 ### Figma para versión mobile
 https://www.figma.com/proto/GKRnRnG5hmgwAMDs7kxiPA/Data-Lover-Pokemon-movil?scaling=scale-down&node-id=1%3A2
 
-## 5. Feedback recibido :
+## 5. Feedback recibido:
 ### Usuario 1: 
-- Quitar el boton de volver, ya que existe una barra de menú
+- Que pueda tener la opción de ordenar los pokemones por numero de orden.
 ### Usuario 2: 
-- Hacer más interactivo los cards de los pokemon
-- Que el buscador de pokemones realicé su función en tiempo real 
-### Usuario 3: 
-- Que la barra de menú sea desplegable en vista mobile
-- Cambiar los colores a tonos más claros
-### Usuario 4:
-- Agregar evoluciones de los pokemones
+- Quisiera poder ver las evoluciones de cada pokémon.
+### Usuario 3:
+- Me gustaria saber cuántos caramelos necesita cada pokémon para evolucionar.
 
 ## 6. Objetivos de aprendizaje
 
