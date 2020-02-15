@@ -129,9 +129,9 @@ _"Yo, como usuario, quiero saber el numero de caramelos que me falta para que mi
 
 ## 4. Prototipo de alta fidelidad :
 ### Figma para versión web
-https://www.figma.com/proto/3EI6dmp6Z0DMaHx02P8LQ0/Data-Lover-Pokemon-Web?node-id=1%3A3&scaling=contain
+https://www.figma.com/proto/O4PmQIjkVNF9SaHLaQB5A0/Data-Lover-Web?node-id=1%3A3&scaling=contain
 ### Figma para versión mobile
-https://www.figma.com/proto/GKRnRnG5hmgwAMDs7kxiPA/Data-Lover-Pokemon-movil?scaling=scale-down&node-id=1%3A2
+https://www.figma.com/proto/EbByh8mIcdgitsEMFl2IDE/Data-Lover-m%C3%B3vil?node-id=1%3A2&scaling=scale-down
 
 ## 5. Feedback recibido:
 ### Usuario 1: 
@@ -142,14 +142,6 @@ https://www.figma.com/proto/GKRnRnG5hmgwAMDs7kxiPA/Data-Lover-Pokemon-movil?scal
 - Me gustaria saber cuántos caramelos necesita cada pokémon para evolucionar.
 
 ## 6. Objetivos de aprendizaje
-
-El objetivo principal de este proyecto es que, entendiendo las necesidades de
-tus usuarios, aprendas a diseñar y construir una interfaz web donde se pueda
-visualizar y manipular data.
-
-Revisa la lista y reflexiona sobre los objetivos que conseguiste en el
-proyecto anterior. Piensa en eso al decidir tu estrategia de trabajo individual
-y de equipo.
 
 ### UX
 
